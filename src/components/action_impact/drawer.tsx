@@ -1,7 +1,20 @@
-import { Box, Drawer, Typography } from "@mui/material";
+import { Box, Button, Drawer, IconButton, Typography } from "@mui/material";
 import React from "react";
 
-const ImpactDrawer = ({ open, onClose }: { open: boolean; onClose: any }) => {
+import Close from "../../assets/close.svg";
+import MainItem from "./main_item";
+import { useNavigate } from "react-router-dom";
+
+const ImpactDrawer = ({
+  selectedBarItem,
+  open,
+  onClose,
+}: {
+  selectedBarItem: any;
+  open: boolean;
+  onClose: any;
+}) => {
+  const navigate = useNavigate();
   return (
     <Drawer
       anchor="right"
@@ -19,49 +32,50 @@ const ImpactDrawer = ({ open, onClose }: { open: boolean; onClose: any }) => {
     >
       <Box
         display="flex"
-        sx={{
-          border: "1px solid #ECEEF1",
-          padding: "24px",
-          gap: "24px",
-        }}
-        alignItems="flex-start"
+        alignItems="center"
+        justifyContent="space-between"
+        mb="30px"
       >
         <Typography
           sx={{
             fontFamily: "Inter",
-            fontSize: "12px",
-            fontWeight: 700,
-            lineHeight: "20px",
+            fontSize: "14px",
+            fontWeight: 400,
+            lineHeight: "22px",
             letterSpacing: "0.01em",
+            color: "#000000",
           }}
         >
-          Adset
+          Impacted Actions
         </Typography>
-        <Box display="flex" flexDirection="column" alignItems="flex-start">
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontSize: "12px",
-              fontWeight: 500,
-              lineHeight: "20px",
-              letterSpacing: "0.01em",
-            }}
-          >
-            Runningshoes-interest_US_20-40_Regular_runner_ad_TAI_Affinity
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Inter",
-              fontSize: "12px",
-              fontWeight: 400,
-              lineHeight: "20px",
-              letterSpacing: "0.01em",
-              color: "#5C6674",
-            }}
-          >
-            23852554920970413
-          </Typography>
-        </Box>
+        <IconButton onClick={onClose}>
+          <Box component="img" src={Close} />
+        </IconButton>
+      </Box>
+      <Box display="flex" flexDirection="column" flex={1} minHeight={0}>
+        <MainItem selectedBarItem={selectedBarItem} />
+      </Box>
+
+      <Box display="flex" justifyContent="flex-end" mb="36px">
+        <Button
+          sx={{
+            padding: "14px 30px",
+            gap: "10px",
+            borderRadius: "8px",
+            background: "#0869FB",
+            textTransform: "none",
+            fontFamily: "Inter",
+            fontSize: "14px",
+            fontWeight: 600,
+            lineHeight: "22px",
+          }}
+          variant="contained"
+          onClick={() => {
+            navigate("/action-overview");
+          }}
+        >
+          Go to Action Overview
+        </Button>
       </Box>
     </Drawer>
   );

@@ -1,0 +1,655 @@
+{
+  "status": "success",
+  "statusCode": 200,
+  "data": {
+    "metric_agg_values": {
+      "CPC": [
+        {
+          "id": 3,
+          "optimiser_id": "opt1",
+          "date": "2024-06-01",
+          "metric_name": "CPC",
+          "metric_value_agg": 42.08
+        },
+        {
+          "id": 7,
+          "optimiser_id": "opt1",
+          "date": "2024-06-02",
+          "metric_name": "CPC",
+          "metric_value_agg": 38.53
+        },
+        {
+          "id": 11,
+          "optimiser_id": "opt1",
+          "date": "2024-06-03",
+          "metric_name": "CPC",
+          "metric_value_agg": 43.6
+        },
+        {
+          "id": 15,
+          "optimiser_id": "opt1",
+          "date": "2024-06-04",
+          "metric_name": "CPC",
+          "metric_value_agg": 36.98
+        },
+        {
+          "id": 19,
+          "optimiser_id": "opt1",
+          "date": "2024-06-05",
+          "metric_name": "CPC",
+          "metric_value_agg": 42.22
+        },
+        {
+          "id": 23,
+          "optimiser_id": "opt1",
+          "date": "2024-06-06",
+          "metric_name": "CPC",
+          "metric_value_agg": 41.55
+        },
+        {
+          "id": 27,
+          "optimiser_id": "opt1",
+          "date": "2024-06-07",
+          "metric_name": "CPC",
+          "metric_value_agg": 40.33
+        },
+        {
+          "id": 31,
+          "optimiser_id": "opt1",
+          "date": "2024-06-08",
+          "metric_name": "CPC",
+          "metric_value_agg": 36.48
+        },
+        {
+          "id": 35,
+          "optimiser_id": "opt1",
+          "date": "2024-06-09",
+          "metric_name": "CPC",
+          "metric_value_agg": 42.14
+        },
+        {
+          "id": 39,
+          "optimiser_id": "opt1",
+          "date": "2024-06-10",
+          "metric_name": "CPC",
+          "metric_value_agg": 36.11
+        },
+        {
+          "id": 43,
+          "optimiser_id": "opt1",
+          "date": "2024-06-11",
+          "metric_name": "CPC",
+          "metric_value_agg": 43.8
+        },
+        {
+          "id": 47,
+          "optimiser_id": "opt1",
+          "date": "2024-06-12",
+          "metric_name": "CPC",
+          "metric_value_agg": 39.31
+        },
+        {
+          "id": 51,
+          "optimiser_id": "opt1",
+          "date": "2024-06-13",
+          "metric_name": "CPC",
+          "metric_value_agg": 41.01
+        },
+        {
+          "id": 55,
+          "optimiser_id": "opt1",
+          "date": "2024-06-14",
+          "metric_name": "CPC",
+          "metric_value_agg": 36.27
+        },
+        {
+          "id": 59,
+          "optimiser_id": "opt1",
+          "date": "2024-06-15",
+          "metric_name": "CPC",
+          "metric_value_agg": 38.32
+        },
+        {
+          "id": 63,
+          "optimiser_id": "opt1",
+          "date": "2024-06-16",
+          "metric_name": "CPC",
+          "metric_value_agg": 40.94
+        },
+        {
+          "id": 67,
+          "optimiser_id": "opt1",
+          "date": "2024-06-17",
+          "metric_name": "CPC",
+          "metric_value_agg": 38.6
+        },
+        {
+          "id": 71,
+          "optimiser_id": "opt1",
+          "date": "2024-06-18",
+          "metric_name": "CPC",
+          "metric_value_agg": 36.69
+        },
+        {
+          "id": 75,
+          "optimiser_id": "opt1",
+          "date": "2024-06-19",
+          "metric_name": "CPC",
+          "metric_value_agg": 41.19
+        },
+        {
+          "id": 79,
+          "optimiser_id": "opt1",
+          "date": "2024-06-20",
+          "metric_name": "CPC",
+          "metric_value_agg": 36.43
+        },
+        {
+          "id": 83,
+          "optimiser_id": "opt1",
+          "date": "2024-06-21",
+          "metric_name": "CPC",
+          "metric_value_agg": 38.89
+        },
+        {
+          "id": 87,
+          "optimiser_id": "opt1",
+          "date": "2024-06-22",
+          "metric_name": "CPC",
+          "metric_value_agg": 36.71
+        },
+        {
+          "id": 91,
+          "optimiser_id": "opt2",
+          "date": "2024-06-01",
+          "metric_name": "CPC",
+          "metric_value_agg": 83.09
+        },
+        {
+          "id": 95,
+          "optimiser_id": "opt2",
+          "date": "2024-06-02",
+          "metric_name": "CPC",
+          "metric_value_agg": 83.89
+        },
+        {
+          "id": 99,
+          "optimiser_id": "opt2",
+          "date": "2024-06-03",
+          "metric_name": "CPC",
+          "metric_value_agg": 88.61
+        },
+        {
+          "id": 103,
+          "optimiser_id": "opt2",
+          "date": "2024-06-04",
+          "metric_name": "CPC",
+          "metric_value_agg": 88.12
+        },
+        {
+          "id": 107,
+          "optimiser_id": "opt2",
+          "date": "2024-06-05",
+          "metric_name": "CPC",
+          "metric_value_agg": 84.74
+        },
+        {
+          "id": 111,
+          "optimiser_id": "opt2",
+          "date": "2024-06-06",
+          "metric_name": "CPC",
+          "metric_value_agg": 84.14
+        },
+        {
+          "id": 115,
+          "optimiser_id": "opt2",
+          "date": "2024-06-07",
+          "metric_name": "CPC",
+          "metric_value_agg": 88.21
+        },
+        {
+          "id": 119,
+          "optimiser_id": "opt2",
+          "date": "2024-06-08",
+          "metric_name": "CPC",
+          "metric_value_agg": 89.35
+        },
+        {
+          "id": 123,
+          "optimiser_id": "opt2",
+          "date": "2024-06-09",
+          "metric_name": "CPC",
+          "metric_value_agg": 85.53
+        },
+        {
+          "id": 127,
+          "optimiser_id": "opt2",
+          "date": "2024-06-10",
+          "metric_name": "CPC",
+          "metric_value_agg": 89.16
+        },
+        {
+          "id": 131,
+          "optimiser_id": "opt2",
+          "date": "2024-06-11",
+          "metric_name": "CPC",
+          "metric_value_agg": 89.94
+        },
+        {
+          "id": 135,
+          "optimiser_id": "opt2",
+          "date": "2024-06-12",
+          "metric_name": "CPC",
+          "metric_value_agg": 83.5
+        },
+        {
+          "id": 139,
+          "optimiser_id": "opt2",
+          "date": "2024-06-13",
+          "metric_name": "CPC",
+          "metric_value_agg": 83.03
+        },
+        {
+          "id": 143,
+          "optimiser_id": "opt2",
+          "date": "2024-06-14",
+          "metric_name": "CPC",
+          "metric_value_agg": 80.66
+        },
+        {
+          "id": 147,
+          "optimiser_id": "opt2",
+          "date": "2024-06-15",
+          "metric_name": "CPC",
+          "metric_value_agg": 89.25
+        },
+        {
+          "id": 151,
+          "optimiser_id": "opt2",
+          "date": "2024-06-16",
+          "metric_name": "CPC",
+          "metric_value_agg": 82.53
+        },
+        {
+          "id": 155,
+          "optimiser_id": "opt2",
+          "date": "2024-06-17",
+          "metric_name": "CPC",
+          "metric_value_agg": 83.71
+        },
+        {
+          "id": 159,
+          "optimiser_id": "opt2",
+          "date": "2024-06-18",
+          "metric_name": "CPC",
+          "metric_value_agg": 88.2
+        },
+        {
+          "id": 163,
+          "optimiser_id": "opt2",
+          "date": "2024-06-19",
+          "metric_name": "CPC",
+          "metric_value_agg": 86.24
+        },
+        {
+          "id": 167,
+          "optimiser_id": "opt2",
+          "date": "2024-06-20",
+          "metric_name": "CPC",
+          "metric_value_agg": 84.93
+        },
+        {
+          "id": 171,
+          "optimiser_id": "opt2",
+          "date": "2024-06-21",
+          "metric_name": "CPC",
+          "metric_value_agg": 87.34
+        },
+        {
+          "id": 175,
+          "optimiser_id": "opt2",
+          "date": "2024-06-22",
+          "metric_name": "CPC",
+          "metric_value_agg": 88.49
+        },
+        {
+          "id": 179,
+          "optimiser_id": "opt3",
+          "date": "2024-06-01",
+          "metric_name": "CPC",
+          "metric_value_agg": 20.78
+        },
+        {
+          "id": 183,
+          "optimiser_id": "opt3",
+          "date": "2024-06-02",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.39
+        },
+        {
+          "id": 187,
+          "optimiser_id": "opt3",
+          "date": "2024-06-03",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.06
+        },
+        {
+          "id": 191,
+          "optimiser_id": "opt3",
+          "date": "2024-06-04",
+          "metric_name": "CPC",
+          "metric_value_agg": 20.96
+        },
+        {
+          "id": 195,
+          "optimiser_id": "opt3",
+          "date": "2024-06-05",
+          "metric_name": "CPC",
+          "metric_value_agg": 20.55
+        },
+        {
+          "id": 199,
+          "optimiser_id": "opt3",
+          "date": "2024-06-06",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.32
+        },
+        {
+          "id": 203,
+          "optimiser_id": "opt3",
+          "date": "2024-06-07",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.55
+        },
+        {
+          "id": 207,
+          "optimiser_id": "opt3",
+          "date": "2024-06-08",
+          "metric_name": "CPC",
+          "metric_value_agg": 20.35
+        },
+        {
+          "id": 211,
+          "optimiser_id": "opt3",
+          "date": "2024-06-09",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.39
+        },
+        {
+          "id": 215,
+          "optimiser_id": "opt3",
+          "date": "2024-06-10",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.02
+        },
+        {
+          "id": 219,
+          "optimiser_id": "opt3",
+          "date": "2024-06-11",
+          "metric_name": "CPC",
+          "metric_value_agg": 20.98
+        },
+        {
+          "id": 223,
+          "optimiser_id": "opt3",
+          "date": "2024-06-12",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.97
+        },
+        {
+          "id": 227,
+          "optimiser_id": "opt3",
+          "date": "2024-06-13",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.37
+        },
+        {
+          "id": 231,
+          "optimiser_id": "opt3",
+          "date": "2024-06-14",
+          "metric_name": "CPC",
+          "metric_value_agg": 20.29
+        },
+        {
+          "id": 235,
+          "optimiser_id": "opt3",
+          "date": "2024-06-15",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.46
+        },
+        {
+          "id": 239,
+          "optimiser_id": "opt3",
+          "date": "2024-06-16",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.16
+        },
+        {
+          "id": 243,
+          "optimiser_id": "opt3",
+          "date": "2024-06-17",
+          "metric_name": "CPC",
+          "metric_value_agg": 20.59
+        },
+        {
+          "id": 247,
+          "optimiser_id": "opt3",
+          "date": "2024-06-18",
+          "metric_name": "CPC",
+          "metric_value_agg": 20.84
+        },
+        {
+          "id": 251,
+          "optimiser_id": "opt3",
+          "date": "2024-06-19",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.91
+        },
+        {
+          "id": 255,
+          "optimiser_id": "opt3",
+          "date": "2024-06-20",
+          "metric_name": "CPC",
+          "metric_value_agg": 20.56
+        },
+        {
+          "id": 259,
+          "optimiser_id": "opt3",
+          "date": "2024-06-21",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.28
+        },
+        {
+          "id": 263,
+          "optimiser_id": "opt3",
+          "date": "2024-06-22",
+          "metric_name": "CPC",
+          "metric_value_agg": 21.24
+        },
+        {
+          "id": 267,
+          "optimiser_id": "opt4",
+          "date": "2024-06-01",
+          "metric_name": "CPC",
+          "metric_value_agg": 63.74
+        },
+        {
+          "id": 271,
+          "optimiser_id": "opt4",
+          "date": "2024-06-02",
+          "metric_name": "CPC",
+          "metric_value_agg": 65.61
+        },
+        {
+          "id": 275,
+          "optimiser_id": "opt4",
+          "date": "2024-06-03",
+          "metric_name": "CPC",
+          "metric_value_agg": 60.9
+        },
+        {
+          "id": 279,
+          "optimiser_id": "opt4",
+          "date": "2024-06-04",
+          "metric_name": "CPC",
+          "metric_value_agg": 67.19
+        },
+        {
+          "id": 283,
+          "optimiser_id": "opt4",
+          "date": "2024-06-05",
+          "metric_name": "CPC",
+          "metric_value_agg": 66.18
+        },
+        {
+          "id": 287,
+          "optimiser_id": "opt4",
+          "date": "2024-06-06",
+          "metric_name": "CPC",
+          "metric_value_agg": 66.5
+        },
+        {
+          "id": 291,
+          "optimiser_id": "opt4",
+          "date": "2024-06-07",
+          "metric_name": "CPC",
+          "metric_value_agg": 60.87
+        },
+        {
+          "id": 295,
+          "optimiser_id": "opt4",
+          "date": "2024-06-08",
+          "metric_name": "CPC",
+          "metric_value_agg": 68.68
+        },
+        {
+          "id": 299,
+          "optimiser_id": "opt4",
+          "date": "2024-06-09",
+          "metric_name": "CPC",
+          "metric_value_agg": 63.41
+        },
+        {
+          "id": 303,
+          "optimiser_id": "opt4",
+          "date": "2024-06-10",
+          "metric_name": "CPC",
+          "metric_value_agg": 65.96
+        },
+        {
+          "id": 307,
+          "optimiser_id": "opt4",
+          "date": "2024-06-11",
+          "metric_name": "CPC",
+          "metric_value_agg": 61.41
+        },
+        {
+          "id": 311,
+          "optimiser_id": "opt4",
+          "date": "2024-06-12",
+          "metric_name": "CPC",
+          "metric_value_agg": 66.84
+        },
+        {
+          "id": 315,
+          "optimiser_id": "opt4",
+          "date": "2024-06-13",
+          "metric_name": "CPC",
+          "metric_value_agg": 62.11
+        },
+        {
+          "id": 319,
+          "optimiser_id": "opt4",
+          "date": "2024-06-14",
+          "metric_name": "CPC",
+          "metric_value_agg": 63.69
+        },
+        {
+          "id": 323,
+          "optimiser_id": "opt4",
+          "date": "2024-06-15",
+          "metric_name": "CPC",
+          "metric_value_agg": 64.42
+        },
+        {
+          "id": 327,
+          "optimiser_id": "opt4",
+          "date": "2024-06-16",
+          "metric_name": "CPC",
+          "metric_value_agg": 67.96
+        },
+        {
+          "id": 331,
+          "optimiser_id": "opt4",
+          "date": "2024-06-17",
+          "metric_name": "CPC",
+          "metric_value_agg": 67.82
+        },
+        {
+          "id": 335,
+          "optimiser_id": "opt4",
+          "date": "2024-06-18",
+          "metric_name": "CPC",
+          "metric_value_agg": 64.86
+        },
+        {
+          "id": 339,
+          "optimiser_id": "opt4",
+          "date": "2024-06-19",
+          "metric_name": "CPC",
+          "metric_value_agg": 66.3
+        },
+        {
+          "id": 343,
+          "optimiser_id": "opt4",
+          "date": "2024-06-20",
+          "metric_name": "CPC",
+          "metric_value_agg": 61.65
+        },
+        {
+          "id": 347,
+          "optimiser_id": "opt4",
+          "date": "2024-06-21",
+          "metric_name": "CPC",
+          "metric_value_agg": 67.79
+        },
+        {
+          "id": 351,
+          "optimiser_id": "opt4",
+          "date": "2024-06-22",
+          "metric_name": "CPC",
+          "metric_value_agg": 66.47
+        }
+      ]
+    },
+    "impact_actions": [
+      {
+        "id": 1,
+        "optimiser_id": "Opt 1",
+        "date": "2024-06-15",
+        "asset_id": "Asset 1",
+        "Impacted Action": "Keyword Action",
+        "percentage_change": -7,
+        "Recommended Action": "Turn off keyword1, keyword2"
+      },
+      {
+        "id": 4,
+        "optimiser_id": "Opt 2",
+        "date": "2024-06-04",
+        "asset_id": "All",
+        "Impacted Action": "Holiday Effect",
+        "percentage_change": 30,
+        "Recommended Action": "NA"
+      },
+      {
+        "id": 5,
+        "optimiser_id": "Opt 3",
+        "date": "2024-06-10",
+        "asset_id": "Asset 78",
+        "Impacted Action": "Creative Changed",
+        "percentage_change": -3,
+        "Recommended Action": "Looks like strategy change, no action recommended"
+      }
+    ]
+  }
+}

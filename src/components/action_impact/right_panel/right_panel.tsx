@@ -1,10 +1,13 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { ChartView } from "../chart_view";
 import header from "../../../assets/header.png";
 import container from "../../../assets/container.png";
+import calendar from "../../../assets/calendar.svg";
+import { defaultMetricsArray } from "../action_impact.const";
 
 const RightPanel = () => {
+  const [metricsList, setMetricsList] = useState(defaultMetricsArray);
   return (
     <Box
       display="flex"
@@ -73,17 +76,29 @@ const RightPanel = () => {
         flex={1}
         minHeight={0}
         sx={{
-          overflow: "auto",
           margin: "10px 0px",
           padding: "24px 16px",
           background: "white",
-          gap: "24px",
           borderRadius: "8px",
         }}
       >
-        <ChartView title="Roas Analysis" />
-        <ChartView title="CPR" />
-        <ChartView title="CVR" />
+        <Box display="flex" alignSelf="flex-end" pb="10px">
+          <Box component="img" src={calendar} />
+        </Box>
+        <Box
+          display="flex"
+          flexDirection="column"
+          flex={1}
+          minHeight={0}
+          sx={{
+            overflow: "auto",
+            gap: "24px",
+          }}
+        >
+          {metricsList.map((item) => (
+            <ChartView title={item.name} key={item.id} />
+          ))}
+        </Box>
       </Box>
     </Box>
   );
