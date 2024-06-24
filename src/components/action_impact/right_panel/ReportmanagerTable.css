@@ -1,0 +1,12 @@
+.class-svg-red path {
+  stroke: #e91b16;
+  /* stroke: yellow; */
+}
+
+.class-svg-green path {
+  stroke: #44bb79;
+}
+
+.class-svg-blue path {
+  stroke: #0869fb;
+}

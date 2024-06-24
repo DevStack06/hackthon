@@ -3,8 +3,9 @@ import React, { useState } from "react";
 import { ChartView } from "../chart_view";
 import header from "../../../assets/header.png";
 import container from "../../../assets/container.png";
-import calendar from "../../../assets/calendar.svg";
+import calendar from "../../../assets/Calendar.svg";
 import { defaultMetricsArray } from "../action_impact.const";
+import "./ReportmanagerTable.css";
 
 const RightPanel = () => {
   const [metricsList, setMetricsList] = useState(defaultMetricsArray);
@@ -82,8 +83,31 @@ const RightPanel = () => {
           borderRadius: "8px",
         }}
       >
-        <Box display="flex" alignSelf="flex-end" pb="10px">
+        <Box
+          display="flex"
+          alignSelf="flex-end"
+          mb="10px"
+          sx={{
+            padding: "6px 12px 6px 12px",
+            borderRadius: "6px",
+            border: "1.5px solid #E0E3E5",
+          }}
+          gap="8px"
+        >
           <Box component="img" src={calendar} />
+          <Typography
+            sx={{
+              fontFamily: "Inter",
+              fontSize: "12px",
+              fontWeight: 600,
+              lineHeight: "22px",
+              letterSpacing: " -0.015em",
+              textAlign: "left",
+              color: "#394455",
+            }}
+          >
+            01 Jun 2024 - 21 Jun 2024
+          </Typography>
         </Box>
         <Box
           display="flex"
@@ -96,7 +120,11 @@ const RightPanel = () => {
           }}
         >
           {metricsList.map((item) => (
-            <ChartView title={item.name} key={item.id} />
+            <ChartView
+              title={item.name}
+              key={item.id}
+              metricType={item.metricType}
+            />
           ))}
         </Box>
       </Box>

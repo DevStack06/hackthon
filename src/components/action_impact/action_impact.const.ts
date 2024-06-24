@@ -1,18 +1,23 @@
 export const defaultMetricsArray = [
   {
-    name: "CPC",
-    id: "CPC",
-  },
-  {
     name: "CPA",
     id: "CPA",
-  },
-  {
-    name: "CVR",
-    id: "CVR",
+    metricType: "negative",
   },
   {
     name: "Spends",
     id: "Spends",
+    metricType: "negative",
+  },
+  {
+    name: "CPC",
+    id: "CPC",
+    metricType: "negative",
+  },
+
+  {
+    name: "CVR",
+    id: "CVR",
+    metricType: "positive",
   },
 ];

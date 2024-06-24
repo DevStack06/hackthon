@@ -2,10 +2,17 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import ActionItem from "./action_item";
 import Impact from "../../assets/impact.svg";
-import UpArrow from "../../assets/up_arrow_green.svg";
-import DownArrow from "../../assets/down_arrow_red.svg";
+import { ReactComponent as UpArrow } from "../../assets/up_arrow_green.svg";
+import { ReactComponent as DownArrow } from "../../assets/down_arrow_red.svg";
+import { findColor, findSVGColorCss } from "./global.utils";
 
-const MainItem = ({ selectedBarItem }: { selectedBarItem: any }) => {
+const MainItem = ({
+  selectedBarItem,
+  metricType,
+}: {
+  selectedBarItem: any;
+  metricType: string;
+}) => {
   return (
     <Box
       display="flex"
@@ -78,9 +85,7 @@ const MainItem = ({ selectedBarItem }: { selectedBarItem: any }) => {
         percentage_change={
           <Box display="flex" alignItems="center" pl="10px">
             <Typography
-              color={
-                selectedBarItem?.percentage_change > 0 ? "#44BB79" : "#E91B16"
-              }
+              color={findColor(metricType, selectedBarItem?.percentage_change)}
               sx={{
                 borderRadius: "4px",
                 fontSize: "12px",
@@ -89,9 +94,19 @@ const MainItem = ({ selectedBarItem }: { selectedBarItem: any }) => {
               {Math.abs(selectedBarItem?.percentage_change) + "%"}
             </Typography>
             {selectedBarItem?.percentage_change > 0 ? (
-              <Box component="img" src={UpArrow} />
+              <UpArrow
+                className={findSVGColorCss(
+                  metricType,
+                  selectedBarItem?.percentage_change
+                )}
+              />
             ) : (
-              <Box component="img" src={DownArrow} />
+              <DownArrow
+                className={findSVGColorCss(
+                  metricType,
+                  selectedBarItem?.percentage_change
+                )}
+              />
             )}
           </Box>
 

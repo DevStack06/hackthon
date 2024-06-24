@@ -28,7 +28,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
 import dataJson from "./data.json";
-import { createDateLookupArray } from "./global.utils";
+import { createDateLookupArray, findColor } from "./global.utils";
 import moment from "moment";
 
 ChartJS.register(
@@ -71,7 +71,14 @@ ChartJS.register(
 //   ],
 // };
 
-export function ChartView({ title }: { title: string }) {
+export function ChartView({
+  title,
+  metricType,
+}: {
+  title: string;
+
+  metricType: string;
+}) {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [selectedBarItem, setSelectedBarItem] = useState();
   const chartRef = useRef();
@@ -132,7 +139,16 @@ export function ChartView({ title }: { title: string }) {
         {
           type: "bar" as const,
           label: "Percentage changes",
-          backgroundColor: "#FCE5F2",
+          backgroundColor: labels.map((item, index: number) => {
+            const item3 = metrcData?.impact_actions?.find(
+              (item2: any) => moment(item2?.date).format("MMM DD") === item
+            );
+            if (item3) {
+              console.log(findColor(metricType, item3?.percentage_change));
+              return findColor(metricType, item3?.percentage_change);
+            }
+            return "#FCE5F2";
+          }),
           data: labels.map((item, index: number) => {
             const item3 = metrcData?.impact_actions?.find(
               (item2: any) => moment(item2?.date).format("MMM DD") === item
@@ -260,7 +276,7 @@ export function ChartView({ title }: { title: string }) {
                     moment(item2?.date).format("MMM DD") ===
                     labels[eventVal?.[0]?.index]
                 );
-                setSelectedBarItem(item3);
+                setSelectedBarItem({ ...item3, metricType });
               }
             }}
             options={{

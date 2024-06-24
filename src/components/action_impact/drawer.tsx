@@ -53,7 +53,10 @@ const ImpactDrawer = ({
         </IconButton>
       </Box>
       <Box display="flex" flexDirection="column" flex={1} minHeight={0}>
-        <MainItem selectedBarItem={selectedBarItem} />
+        <MainItem
+          selectedBarItem={selectedBarItem}
+          metricType={selectedBarItem?.metricType}
+        />
       </Box>
 
       <Box display="flex" justifyContent="flex-end" mb="36px">
