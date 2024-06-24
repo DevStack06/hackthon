@@ -5,7 +5,7 @@ import ActionImpact from "../components/action_impact/action_imapct";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <ActionImpact />,
   },
   {
     path: "/action-overview",

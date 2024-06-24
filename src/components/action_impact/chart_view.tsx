@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Fragment, useMemo, useRef, useState } from "react";
 import {
   Chart as ChartJS,

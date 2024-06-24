@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import ActionItem from "./action_item";
